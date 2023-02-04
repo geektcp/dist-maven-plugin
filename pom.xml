@@ -7,7 +7,7 @@
     <groupId>com.geektcp.common</groupId>
     <artifactId>dist-maven-plugin</artifactId>
     <version>1.0.0.RELEASE</version>
-
+    <packaging>maven-plugin</packaging>
     <dependencies>
         <dependency>
             <groupId>org.apache.maven</groupId>

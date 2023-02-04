@@ -4,8 +4,13 @@ import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
 /**
- * @author Administrator on 2023/2/3 11:26.
+ * @author geektcp on 2023/2/3 11:26.
  */
+
+/**
+*
+* @goal goal1
+* */
 public class Goal1Mojo extends AbstractMojo {
 
     @Parameter(name = "name", defaultValue = "test")
