@@ -28,6 +28,11 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.geektcp.common</groupId>
+            <artifactId>thy-core</artifactId>
+            <version>1.0.1.RELEASE</version>
+        </dependency>
     </dependencies>
 
     <build>
