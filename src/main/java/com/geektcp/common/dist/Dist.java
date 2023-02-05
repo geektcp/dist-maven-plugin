@@ -15,11 +15,13 @@ public class Dist extends AbstractMojo {
     @Parameter(name = "name", defaultValue = "test")
     private String name;
 
+    /**
+     * assemble the jars when finished the operation: mvn package
+     * need mv the jar and pack it ,then we will get the zip or tar file
+     * which include all jar of every module.
+     * */
     public void execute() {
-        String command = "mvn clean javadoc:jar deploy -P release,gpg";
-        Sys.p("command: " + command);
-        Process process = Sys.exec(command);
-        Sys.printCommandResult(process);
+
     }
 
 }
