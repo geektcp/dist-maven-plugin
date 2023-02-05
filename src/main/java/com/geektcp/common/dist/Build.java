@@ -5,27 +5,23 @@ import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
+import java.io.OutputStream;
+
 /**
  * @author geektcp on 2023/2/3 11:27.
  */
 
-/**
- *
- */
-@Mojo(name = "goal2")
-public class Goal2Mojo extends AbstractMojo {
+@Mojo(name = "build")
+public class Build extends AbstractMojo {
+
     @Parameter(name = "name", defaultValue = "test")
     private String name;
 
     public void execute() {
-        getLog().info("This is thy.");
-        Sys.p(123);
-
-        try {
-            Runtime.getRuntime().exec("notepad.exe");
-        } catch (Exception e) {
-            Sys.p(e.getMessage());
-        }
+        String command = "mvn clean javadoc:jar deploy -P release,gpg";
+        Sys.p("command: " + command);
+        Process process = Sys.exec(command);
+        Sys.printCommandResult(process);
     }
 
 }
