@@ -7,7 +7,7 @@
 ```
 <plugin>
     <groupId>com.geektcp.common</groupId>
-    <artifactId>maven-dist-plugin</artifactId>
+    <artifactId>dist-maven-plugin</artifactId>
     <version>1.0.0.RELEASE</version>
 </plugin>
 ```
