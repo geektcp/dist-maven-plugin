@@ -5,8 +5,6 @@ import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
-import java.io.OutputStream;
-
 /**
  * @author geektcp on 2023/2/3 11:27.
  */
