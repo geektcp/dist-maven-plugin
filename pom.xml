@@ -10,11 +10,11 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
-    <url>https://github.com/geektcp/maven-dist-plugin</url>
+    <url>https://github.com/geektcp/dist-maven-plugin</url>
     <scm>
-        <connection>scm:git:https://github.com/geektcp/maven-dist-plugin</connection>
-        <developerConnection>scm:git:https://github.com/geektcp/maven-dist-plugin.git</developerConnection>
-        <url>git:https://github.com/geektcp/maven-dist-plugin.git</url>
+        <connection>scm:git:https://github.com/geektcp/dist-maven-plugin</connection>
+        <developerConnection>scm:git:https://github.com/geektcp/dist-maven-plugin.git</developerConnection>
+        <url>git:https://github.com/geektcp/dist-maven-plugin.git</url>
     </scm>
     <developers>
         <developer>
@@ -23,11 +23,11 @@
             <organization>https://github.com/geektcp</organization>
         </developer>
     </developers>
-    <name>maven-dist-plugin</name>
+    <name>dist-maven-plugin</name>
     <description>distribute plugin for Java</description>
 
     <groupId>com.geektcp.common</groupId>
-    <artifactId>maven-dist-plugin</artifactId>
+    <artifactId>dist-maven-plugin</artifactId>
     <version>1.0.0.RELEASE</version>
     <packaging>maven-plugin</packaging>
     <dependencies>
