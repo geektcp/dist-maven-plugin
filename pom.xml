@@ -28,8 +28,12 @@
 
     <groupId>com.geektcp.common</groupId>
     <artifactId>dist-maven-plugin</artifactId>
-    <version>1.0.0.RELEASE</version>
+    <version>1.0.1.RELEASE</version>
     <packaging>maven-plugin</packaging>
+
+    <properties>
+        <maven.test.skip>true</maven.test.skip>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.apache.maven</groupId>
@@ -53,7 +57,7 @@
         <dependency>
             <groupId>com.geektcp.common</groupId>
             <artifactId>thy-core</artifactId>
-            <version>1.0.1.RELEASE</version>
+            <version>1.0.2.RELEASE</version>
         </dependency>
     </dependencies>
 

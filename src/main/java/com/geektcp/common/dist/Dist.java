@@ -1,5 +1,7 @@
 package com.geektcp.common.dist;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.geektcp.common.core.system.Sys;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugins.annotations.Mojo;
@@ -12,8 +14,8 @@ import org.apache.maven.plugins.annotations.Parameter;
 @Mojo(name = "dist")
 public class Dist extends AbstractMojo {
 
-    @Parameter(name = "name", defaultValue = "test")
-    private String name;
+    @Parameter(name = "configFile", defaultValue = "dist.json")
+    private String configFile;
 
     /**
      * assemble the jars when finished the operation: mvn package
@@ -21,7 +23,14 @@ public class Dist extends AbstractMojo {
      * which include all jar of every module.
      * */
     public void execute() {
+        JSONObject jsonObject = Sys.readJSONObject(configFile, JSONObject.class);
+        Sys.p(JSON.toJSONString(jsonObject,true));
+        String path = "/tmp/thy";
+        Sys.mkdir(path);
+        getLog().info("create path: " + path);
 
+        Sys.touch("/tmp/thy/execute.log");
+        getLog().info("touch path: " + path);
     }
 
 }
